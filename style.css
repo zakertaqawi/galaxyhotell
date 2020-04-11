@@ -1,0 +1,214 @@
+body {
+  /*background-color: #cfcfc3;*/
+  margin: 1em;
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  background-image: url(back-image.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+img.mySlides {
+  border-radius: 15px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  font-family: verdana;
+  text-align: justify;
+}
+
+.list {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+ul, li {
+  list-style-type: square;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+img#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  background-color: #7a7a59;
+}
+
+aside {
+  background-color: #8f8f73;
+}
+
+footer {
+  background-color: #a3a38c;
+  text-align: center;
+}
+
+/*paul's webside*/
+
+section, aside, footer, nav {
+  border-radius: 15px;
+  padding: 1%;
+  margin: 0px 12px;
+}
+
+aside {
+  background-size: auto;
+  text-align: center;
+  animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-image: url(seaView.jpg);
+  }
+  33% {
+    background-image: url(pillow.jpg);
+  }
+  66% {
+    background-image: url(pool.jpg);
+  }
+}
+
+div.form {
+  padding: 2%;
+}
+
+iframe {
+  border-radius: 12px;
+  width : 100%;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  padding: 12px 12px 12px 0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.btn {
+  display: block;
+  float: left;
+  background-color: #009999;
+  font-weight: 600;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 70px;
+  color: white;
+}
+
+.form-controll {
+  display: block;
+  width: 70%;
+  height: 34px;
+  padding: 14px 7px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: auto;
+}
+
+nav a {
+  border-radius: 15px;
+}
+
+.topnav {
+  background-color: #4a5226;
+  /*333 fro the beginning*/
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  background-color: #697a59;
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+  background-color: #009999;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+  display: none;
+}
+/*navigation*/
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

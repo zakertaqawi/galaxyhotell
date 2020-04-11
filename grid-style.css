@@ -1,0 +1,44 @@
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  grid-gap: 0.5em 1em;
+  grid-template-areas: "logo logo logo"
+                       "header header header"
+                       "section section aside"
+                       "footer footer footer";
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo"
+                         "header"
+                         "section"
+                         "aside"
+                         "footer";
+    grid-gap: 1em 2em;
+  }
+}
+
+main {
+  grid-area: logo;
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}

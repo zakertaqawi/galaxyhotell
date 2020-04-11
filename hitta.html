@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GALAXY HOTELL</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="grid-style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <main>
+    <img id="logo" src="Logo.png" width="150" height="150" alt="logo for the hotel" />
+  </main>
+  <header id="navigation">
+    <nav class="topnav" id="MyTopNav">
+      <a href="index.html">Start</a>
+      <a href="boka.html">Boka/Evenemang</a>
+      <a href="kontakta.html">Kontakta</a>
+      <a href="hitta.html" class="active">Hitta</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;
+      <i class="fa fa-bars"></i>
+    </a>
+    </nav>
+  </header>
+
+  <!-- section area -->
+  <section>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.085375793011!2d13.007436951396945!3d55.60052778041723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a158e96f45ff%3A0x2297d95e3448e329!2sPauliskolan!5e0!3m2!1ssv!2sse!4v1512471131067"
+       width="912" height="755" style="border: 0" allowfullscreen></iframe>
+  </section>
+
+
+  <!-- aside area -->
+  <aside class="formForBooking">
+    <h2>Boka rum</h2>
+
+    <div class="form-group">
+      <hr>
+      <label for="ArrivalDate">Ankomstdatum</label>
+      <input type="date" id="ArrivalDate" class="form-controll text-box">
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="DepartureDate">Avresadatum</label>
+      <input type="date" id="DepartureDate" class="form-controll text-box">
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="NumberOfAdults">Antal vuxna</label>
+      <select id="NumberOfAdults" class="form-controll">
+      <option value="1">1</option>
+      <option value="2" selected> 2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      </select>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="NumberOfKids3">Barn 3-12 år</label>
+      <select id="NumberOfKids3" class="form-controll">
+      <option value="0" selected>0</option>
+      <option value="1">1</option>
+      <option value="2"> 2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      </select>
+    </div>
+    <hr>
+    <div class="form-group">
+      <label for="NumberOfKids0">Barn 0-2 år</label>
+      <select id="NumberOfKids0" class="form-controll">
+      <option value="0" selected>0</option>
+      <option value="1">1</option>
+      <option value="2"> 2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      </select>
+    </div>
+    <input type="button" class="btn desktop" value="Sök">
+
+  </aside>
+
+  <!-- Footer area -->
+  <footer>
+    GALAXY HOTELL | Södra Förstadsgatan 30A | 213 45 Malmö | 012 - 12 34 45
+  </footer>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("MyTopNav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+</body>
+
+</html>

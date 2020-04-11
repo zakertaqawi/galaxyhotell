@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GALAXY HOTELL</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="grid-style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <main>
+    <img id="logo" src="Logo.png" width="150" height="150" alt="logo for the hotel" />
+  </main>
+  <header id="navigation">
+    <nav class="topnav" id="MyTopNav">
+      <a href="index.html">Start</a>
+      <a href="boka.html">Boka/Evenemang</a>
+      <a href="kontakta.html" class="active">Kontakta</a>
+      <a href="hitta.html">Hitta</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+
+  <!-- section area -->
+  <section>
+    <div class="form">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Förnamn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Efternamn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efterman...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="telephone">Telenr</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="telephone" name="telephone" placeholder="Ditt telefonnummer...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Din epost...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Meddelande</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Skriv ditt meddelande här.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <!-- aside area -->
+  <aside class="Events">
+    <h3 class="widget-title">
+      KOMMANDE EVENTS
+     </h3>
+    <ul class="tribe-list-widget">
+      <li class="tribe-events-list">
+        <h4 class="tribe-event-title">Pub-afton 17 April</h4>
+        <div class="tribe-event-time">
+          <span class="tribe-event-date-start">April 17 @ 21:00</span> -
+          <span class="tribe-event-date-end">April 18 @ 01:00</span>
+        </div>
+      </li>
+
+      <li class="tribe-events-list">
+        <h4 class="tribe-event-title">John Wildcat - Rockabilly på svenska + DJ!</h4>
+        <div class="tribe-event-time">
+          <span class="tribe-event-date-start">June 13 @ 22:00</span> -
+          <span class="tribe-event-date-end">June 14 @ 01:00</span>
+        </div>
+      </li>
+
+      <li class="tribe-events-list">
+        <h4 class="tribe-event-title">Robert band - Sweden Tour</h4>
+        <div class="tribe-event-time">
+          <span class="tribe-event-date-start">June 26 @ 18:00</span> -
+          <span class="tribe-event-date-end">June 27 @ 01:00</span>
+        </div>
+      </li>
+    </ul>
+
+    <p class="list">View All Events</p>
+
+  </aside>
+
+  <!-- Footer area -->
+  <footer>
+    GALAXY HOTELL | Södra Förstadsgatan 30A | 213 45 Malmö | 012 - 12 34 45
+  </footer>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("MyTopNav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
