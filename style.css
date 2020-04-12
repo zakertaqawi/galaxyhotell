@@ -2,7 +2,7 @@ body {
   /*background-color: #cfcfc3;*/
   margin: 1em;
   font-family: "Barlow Condensed", Arial, sans-serif;
-  background-image: url(back-image.jpg);
+  background-image: url(back-image.png);
   background-attachment: fixed;
   background-size: 100% 100%;
 }
@@ -85,46 +85,6 @@ iframe {
   width : 100%;
 }
 
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 700;
-  padding: 12px 12px 12px 0;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right;
-}
-
-.btn {
-  display: block;
-  float: left;
-  background-color: #009999;
-  font-weight: 600;
-  padding: 7px 11px;
-  font-size: 16px;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 70px;
-  color: white;
-}
-
 .form-controll {
   display: block;
   width: 70%;
@@ -178,7 +138,7 @@ nav a {
 }
 /*navigation*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -190,7 +150,7 @@ nav a {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: relative;
   }
@@ -206,7 +166,74 @@ nav a {
   }
 }
 
-@media (max-width: 700px) {
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  padding: 12px 12px 12px 0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.btn {
+  display: block;
+  float: left;
+  background-color: #009999;
+  font-weight: 600;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 70px;
+  color: white;
+}
+/* Style the container *
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}*/
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;

@@ -2,17 +2,17 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto 1fr;
-  grid-gap: 0.5em 1em;
+  grid-template-rows: auto auto auto auto 1fr;
   grid-template-areas: "logo logo logo"
                        "header header header"
                        "section section aside"
                        "footer footer footer";
+    grid-gap: 0.5em 1em;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   body {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
     grid-template-rows: auto;
     grid-template-areas: "logo"
                          "header"
