@@ -18,6 +18,9 @@ p {
   font-family: verdana;
   text-align: justify;
 }
+.Email{
+  text-align: center;
+}
 
 .list {
   text-align: center;
